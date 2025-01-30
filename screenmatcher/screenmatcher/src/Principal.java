@@ -1,4 +1,5 @@
 import com.manu.screenmatcher.models.Movie;
+import com.manu.screenmatcher.models.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -14,5 +15,11 @@ public class Principal {
         System.out.println(favMovie.obtainSumOfRatings());
         System.out.println("Total de avaliações: " + favMovie.getRating());
         favMovie.showMovieDetails();
+
+        Serie favSerie = new Serie();
+        favSerie.setName("Seinfeld");
+        favSerie.setDurationInMinutes(24);
+        favSerie.setReleaseYear(1980);
+        favSerie.showMovieDetails();
     }
 }
